@@ -5,3 +5,4 @@ Second Script displays the content list of your current directory
 Third Script changes the working directory to the user's home directory
 Fourth Script displays current directory contents in a long format
 Fifth Script displays current directory contents, including hidden files(starting with .)
+Sixth Script displays current directory contents
