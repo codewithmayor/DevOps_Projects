@@ -12,4 +12,5 @@ Nineth Script delets the file betty
 Tenth Script deletes my_first_directory in the /tmp directory
 Eleventh Script changes the working directory to the previous one
 Twelveth Script lists all files(even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory in long format
-Thirteenth Script prints the type of file 
+Thirteenth Script prints the type of file
+Fourteenth Script creates a symbolic link 
