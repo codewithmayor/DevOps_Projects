@@ -9,3 +9,4 @@ Sixth Script displays current directory contents
 Seventh Script creates a directory named "my_first_directory in the /tmp directory
 Eighth Script moves the file betty from /tmp to /tmp/my_first_directory
 Nineth Script delets the file betty
+Tenth Script deletes my_first_directory in the /tmp directory
