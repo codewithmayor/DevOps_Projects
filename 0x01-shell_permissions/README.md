@@ -9,3 +9,5 @@ Task 7; write a script that adds execution permission to the owner, the group ow
 Task 8; write a script that sets the permission to the file hello
 Task 9; write a script that sets the mode of the file hello to given mode
 Task 10; Write a script that sets the mode of the file hello the same as olleh’s mode.
+Task 11; Create a script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users. Regular files should not be changed
+
