@@ -8,3 +8,4 @@ Task 6; write a script that adds execute permission to the owner and the group o
 Task 7; write a script that adds execution permission to the owner, the group owner and the other users, to the file hello
 Task 8; write a script that sets the permission to the file hello
 Task 9; write a script that sets the mode of the file hello to given mode
+Task 10; Write a script that sets the mode of the file hello the same as olleh’s mode.
