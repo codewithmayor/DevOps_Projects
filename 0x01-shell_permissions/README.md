@@ -9,3 +9,4 @@ Task 8; script sets all and only permissions to other users excluding owner and 
 Task 9; script sets the mode of the file hello to -rwxr-x-wx
 Task 10; script sets the mode of the file hello as the same as olleh's file mode
 Task 11; script that adds execute permission to all subdirectories of the current directory for the owner, the group and all other users without changing regular files
+Task 12; script creates a directory called my_dir with permissions 751 in the working directory
