@@ -10,3 +10,6 @@ Task 8: Write a script that writes into the file ls_cwd_content the result of th
 Task 9: Write a script that duplicates the last line of the file iacta
 The file iacta will be in the working directory
 Task 10: Write a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
+Task 11: rite a script that counts the number of directories and sub-directories in the current directory.
+The current and parent directories should not be taken into account
+Hidden directories should be counted
