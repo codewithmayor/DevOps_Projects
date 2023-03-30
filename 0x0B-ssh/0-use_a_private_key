@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-ssh-copy-id -i /Users/macc/.ssh/school.pub ubuntu@3.94.185.159
+ssh -i /Users/macc/.ssh/school ubuntu@18.204.16.180
