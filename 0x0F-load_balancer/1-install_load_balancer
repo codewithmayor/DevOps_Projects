@@ -1,0 +1,22 @@
+#!/usr/bin/env bash 
+#Bash script that Installs and configures HAproxy on your lb-01 server.
+# shellcheck disable=SC2016
+sudo apt-get -y update
+sudo apt-get -y install haproxy=2.0.\*
+
+# Configure HAProxy frontend
+sudo sed -i -e '/^frontend my_frontend$/,/^backend my_backend$/{
+/^frontend my_frontend$/!d
+/^frontend my_frontend$/a\
+   bind *:80\n   mode http\n   default_backend my_backend
+}' /etc/haproxy/haproxy.cfg
+
+# Configure HAProxy backend
+sudo sed -i -e '/^backend my_backend$/,/^backend$/{
+/^backend my_backend$/!d
+/^backend my_backend$/a\
+   mode http\n   balance roundrobin\n   server  102231-web-01 52.204.21.220 check\n   server  102231-web-02 54.84.209.221 check
+}' /etc/haproxy/haproxy.cfg
+
+
+sudo service haproxy restart
