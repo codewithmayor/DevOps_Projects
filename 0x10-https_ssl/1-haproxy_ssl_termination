@@ -1,0 +1,36 @@
+global
+    log 127.0.0.1 local2 info
+    chroot /var/lib/haproxy
+    pidfile /var/run/haproxy.pid
+    maxconn 4000
+    user haproxy
+    group haproxy
+    daemon
+
+defaults
+    log global
+    mode http
+    option httplog
+    option dontlognull
+    timeout connect 5000
+    timeout client 50000
+    timeout server 50000
+
+frontend http-in
+    bind *:80
+    reqadd X-Forwarded-Proto:\ http
+    default_backend web-server
+
+frontend https-in
+    bind *:443 ssl crt /etc/ssl/private/www.holberton.online
+    reqadd X-Forwarded-Proto:\ https
+    default_backend web-server
+
+backend web-server
+    server web1 192.168.1.100:80 check
+
+listen stats
+    bind *:8080
+    stats enable
+    stats uri /
+    stats auth admin:password
