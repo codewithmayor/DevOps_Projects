@@ -1,1 +1,1 @@
-Concepts covered include: Unix shell basics, Bash scripting, How to design and draw a full stack web app architectural diagram - DNS, Web server, APIs, Webstack Monitoring, Application ServerLoad balancer, CI/CD Pipelines, SSH, Firewalls, AWS.
+Concepts covered include: Unix shell basics, Bash scripting, How to design and draw a full stack web app architectural diagram - DNS, Web server, APIs, Webstack Monitoring, Application Server, Load balancer, CI/CD Pipelines, SSH, Firewalls, AWS.
